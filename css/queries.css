@@ -4,8 +4,8 @@
     font-size: 55%;
   }
 
-  a,
-  button {
+  .header-nav-item a,
+  .header-buttons button {
     font-size: 1.8rem;
   }
 }
@@ -16,8 +16,8 @@
     font-size: 40%;
   }
 
-  a,
-  button {
+  .header-nav-item a,
+  .header-buttons button {
     font-size: 2.2rem;
   }
 }
@@ -28,13 +28,17 @@
     font-size: 30%;
   }
 
+  .header-nav-item a,
+  .header-buttons button {
+    font-size: 5rem;
+    font-weight: 400;
+  }
+
   .snap-header {
     display: flex;
     justify-content: space-between;
     position: relative;
-    margin: 0 auto;
     padding: 6rem 5rem;
-    width: 100%;
   }
 
   .header-logo-box img {
@@ -43,6 +47,8 @@
 
   .header-menu-box {
     display: block;
+    cursor: pointer;
+    z-index: 15;
   }
 
   .header-menu-open,
@@ -59,6 +65,14 @@
     display: none;
   }
 
+  .show-menu .header-menu-close {
+    display: block;
+  }
+
+  .show-menu .header-menu-open {
+    display: none;
+  }
+
   .header-nav-box {
     display: none;
   }
@@ -68,27 +82,93 @@
     position: absolute;
     top: 0;
     right: 0;
-    background-color: burlywood;
-    width: 25%;
+    background-color: #fafafa;
+    width: 50%;
     height: 100vh;
+    z-index: 10;
   }
 
   .header-nav-list {
-    display: flex;
     flex-direction: column;
+    gap: 7rem;
+    padding: 32rem 0 0 6rem;
+    margin-bottom: 10rem;
   }
 
-  .header-buttons-box {
+  .header-nav-item {
+    display: block;
+  }
+
+  .header-nav-item img {
+    height: 1.4rem;
+  }
+
+  .header-nav-features,
+  .header-nav-company {
+    gap: 4rem;
+  }
+
+  .show-features .features-hidden-menu,
+  .show-company .company-hidden-menu {
+    position: static;
+    background-color: #fafafa;
+    box-shadow: none;
+    padding: 0;
+    margin: 4rem 0 0 8rem;
+  }
+
+  .features-nav-list li {
+    gap: 2rem;
+  }
+
+  .features-nav-list li,
+  .company-nav-list li {
+    margin-bottom: 4rem;
+  }
+
+  .features-nav-list a,
+  .company-nav-list a {
+    font-size: 4rem;
+    font-weight: 500;
+  }
+
+  .features-nav-list img {
+    height: 4rem;
+  }
+
+  .show-menu .menu-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 60rem;
+    margin: 0 auto;
+    z-index: 10;
+  }
+
+  .menu-login,
+  .menu-register {
+    font-size: 4rem;
+  }
+
+  .menu-login {
+    margin: 0 0 3rem 0;
+    border: none;
+  }
+
+  .menu-register {
+    border: 0.2rem solid #888888;
+    border-radius: 2rem;
+    padding: 2rem 0;
+  }
+
+  .header-buttons {
     display: none;
   }
 
-  .show-menu .header-buttons-box {
-    display: inline-block;
-    position: absolute;
-  }
+  /* MAIN CONTENT */
 
   .snap-main {
     width: 100%;
+    padding: 2rem 0 10rem 0;
   }
 
   .hero-image-desktop {

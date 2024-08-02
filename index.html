@@ -22,22 +22,59 @@
         <ul class="header-nav-list">
           <li class="header-nav-item">
             <a class="header-nav-features" href="#">
-              <span>Features</span>
+              <p>Features</p>
               <img
                 class="features-nav-arrow"
                 src="./images/icon-arrow-down.svg"
                 alt="Arrow down"
               />
+              <div class="features-hidden-menu">
+                <ul class="features-nav-list">
+                  <li>
+                    <img src="./images/icon-todo.svg" alt="Todo icon" />
+                    <a href="#">Todo List</a>
+                  </li>
+                  <li>
+                    <img src="./images/icon-calendar.svg" alt="Calendar icon" />
+                    <a href="#">Calendar</a>
+                  </li>
+                  <li>
+                    <img
+                      src="./images/icon-reminders.svg"
+                      alt="Remainders icon"
+                    />
+                    <a href="#">Reminders</a>
+                  </li>
+                  <li>
+                    <img src="./images/icon-planning.svg" alt="Planning icon" />
+                    <a href="#">Planning</a>
+                  </li>
+                </ul>
+              </div>
             </a>
           </li>
           <li class="header-nav-item">
             <a class="header-nav-company" href="#">
-              <span>Company</span>
+              <p>Company</p>
               <img
                 class="company-nav-arrow"
                 src="./images/icon-arrow-down.svg"
                 alt="Arrow down"
-            /></a>
+              />
+              <div class="company-hidden-menu">
+                <ul class="company-nav-list">
+                  <li>
+                    <a href="#">History</a>
+                  </li>
+                  <li>
+                    <a href="#">Our Team</a>
+                  </li>
+                  <li>
+                    <a href="#">Blog</a>
+                  </li>
+                </ul>
+              </div>
+            </a>
           </li>
           <li class="header-nav-item">
             <a href="#">Careers</a>
@@ -46,40 +83,13 @@
             <a href="#">About</a>
           </li>
         </ul>
-
-        <ul class="features-nav-list">
-          <li>
-            <img src="./images/icon-todo.svg" alt="Todo icon" />
-            <a href="#">Todo List</a>
-          </li>
-          <li>
-            <img src="./images/icon-calendar.svg" alt="Calendar icon" />
-            <a href="#">Calendar</a>
-          </li>
-          <li>
-            <img src="./images/icon-reminders.svg" alt="Remainders icon" />
-            <a href="#">Reminders</a>
-          </li>
-          <li>
-            <img src="./images/icon-planning.svg" alt="Planning icon" />
-            <a href="#">Planning</a>
-          </li>
-        </ul>
-
-        <ul class="company-nav-list">
-          <li>
-            <a href="#">History</a>
-          </li>
-          <li>
-            <a href="#">Our Team</a>
-          </li>
-          <li>
-            <a href="#">Blog</a>
-          </li>
-        </ul>
+        <div class="menu-buttons">
+          <button class="menu-login">Login</button>
+          <button class="menu-register">Register</button>
+        </div>
       </nav>
 
-      <div class="header-buttons-box">
+      <div class="header-buttons">
         <button class="login-button">Login</button>
         <button class="register-button">Register</button>
       </div>
@@ -127,6 +137,9 @@
         </div>
       </section>
     </main>
+
+    <div class="overlay hidden"></div>
+
     <script src="./js/script.js"></script>
     <script
       type="module"
