@@ -252,6 +252,10 @@
   .hero-featured-list img {
     width: 19.6rem;
   }
+
+  .show-menu .menu-buttons {
+    width: 40rem;
+  }
 }
 
 /* 368px */
